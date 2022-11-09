@@ -1,0 +1,10 @@
+class prog {
+    
+    public static void main(String[] args) 
+    {
+    
+        int n=2;
+        while ( n < 11 )
+            System.out.println( n++ );
+    }
+}
