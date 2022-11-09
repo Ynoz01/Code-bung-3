@@ -1,0 +1,144 @@
+package übung;
+
+import java.util.Scanner;
+
+public class SchleifenAction 
+{
+	public static void main(String []args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		System.out.println(" = " + dreierSummeFor(n));
+		System.out.println(" = " + dreierSummeWhile(n));
+		System.out.println(" = " + dreierSummeDowhile(n));
+	}
+	public static int dreierSummeFor(int n)
+	{   
+	    String r = "";
+	    int vZahl=0;
+	    int result = 0;
+	    int stop = 0;
+	    if(n<3)
+	    {
+	        return 0;
+	    }
+	        
+	    else
+	        for(int i=1; i<=n; i++) 
+	        {
+	        	
+	        	if(i==n-2 || i==n-1)
+	        		if(i%3==0)
+	        			n=stop;
+	        		else;
+	        	
+	            if(i%3==0)
+	            {
+	                
+	                result = i+vZahl;
+	                
+	                r = "" + result;
+	                if(i%3==0)
+	                	if(i<n)
+	                	System.out.print(i + " + ");
+	                	else
+	                	System.out.print(i);
+	                else;
+	                vZahl = result;
+	                stop = i;
+	            }
+	
+	            else;
+	        }
+	    return result;    
+	}
+	
+	public static int dreierSummeWhile(int n)
+	{   
+	    String r = "";
+	    int vZahl=0;
+	    int result = 0;
+	    int i=1;
+	    int stop = 0;
+	    if(n<3)
+	    {
+	        return 0;
+	    }
+	        
+	    else
+	        while(i<=n)
+	        {
+	        	if(i==n-2 || i==n-1)
+	        		if(i%3==0)
+	        			n=stop;
+	        		else;
+	        	
+	            if(i%3==0)
+	            {
+	                
+	                result = i+vZahl;
+	                
+	                r = "" + result;
+	                if(i%3==0)
+	                	if(i<n)
+	                	System.out.print(i + " + ");
+	                	else
+	                	System.out.print(i);
+	                else;
+	                vZahl = result;
+	                stop = i;
+	                i++;
+	            }
+	
+	            else
+	            i++;
+	        }
+	    return result;    
+	}
+	
+	public static int dreierSummeDowhile(int n)
+	{   
+	    String r = "";
+	    int vZahl=0;
+	    int result = 0;
+	    int i=1;
+	    int stop= 0;
+	    if(n<3)
+	    {
+	        return 0;
+	    }
+	        
+	    else
+	        do
+	        {	
+	        	if(i==n-2 || i==n-1)
+	        		if(i%3==0)
+	        			n=stop;
+	        		else;
+	        			
+	        			
+	        		
+	            if(i%3==0)
+	            {
+	                
+	                result = i+vZahl;
+	                
+	                r = "" + result;
+	                if(i%3==0)
+	                	if(i<n)
+	                	System.out.print(i + " + ");
+	                	else
+	                	System.out.print(i);
+	                else;
+	                vZahl = result;
+	                stop = i;
+	                i++;
+	            }
+	
+	            else
+	            i++;
+	        }while(i<=n);
+	    return result;    
+	}
+}
