@@ -1,0 +1,16 @@
+class prog {
+    
+    public static void main(String[] args) 
+    
+    {
+    
+    int z = 1266;
+    int sum = 0;
+        
+     while (z >=0 && sum <= 400036)
+     sum += z;
+       
+     sum = sum - 20;
+       System.out.print("z = " + z + " sum = " + sum);
+    }
+}
