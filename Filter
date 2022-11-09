@@ -1,0 +1,40 @@
+package übung;
+
+import java.util.Scanner;
+
+public class FilterSensor 
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int vWert = 1;
+		int stop = 1;
+		
+		System.out.println("Bitte Messwerte eingeben:");
+		
+		while(true) 
+		{
+			
+		int messwert = sc.nextInt();
+		if(messwert == -1 && vWert == -1 && stop == -1)
+			break;
+		
+		if(messwert > 0)
+			System.out.print(messwert + " ");
+		
+		else
+			if( vWert == 0)
+				System.out.print("");
+			else
+				if(messwert <0);
+					
+				else
+					System.out.print(messwert);
+	
+		stop = vWert;
+		vWert = messwert;
+		
+		}
+		
+	}
+}
