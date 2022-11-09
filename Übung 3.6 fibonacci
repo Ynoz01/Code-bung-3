@@ -1,0 +1,33 @@
+package übung;
+
+import java.util.Scanner;
+
+public class übung3_6 
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		System.out.print(fibonacci(n));
+	}
+	
+	public static long fibonacci(int n) 
+	{
+		long speicher1 = 1;
+		long speicher2 = 0;
+		long f = 1;
+		if(n==0)
+			return 0;
+		else
+		{
+			for(int i = 1; i<n; i++)
+			{
+	    		f = speicher1 + speicher2;
+	    		
+	    		speicher2 = speicher1;
+	    		speicher1 = f;
+			}
+		return f;
+		}
+	}
+}
