@@ -1,0 +1,79 @@
+class prog {
+    
+    public static void main(String[] args) 
+	{
+		
+    	String nichtstern = "*";
+    	String stern = "";
+        // a)
+        // for ...
+	    for(int i = 0; i<10; i++) 
+	    {
+	    	stern += nichtstern;
+	    	System.out.print(stern);
+	    	System.out.println();
+	    }
+		// Abstand zwischen den Ausgaben
+		System.out.println();
+		System.out.println();
+		
+		
+		// b)
+		// for ...
+		for(int i = 10; i>0; i--) 
+	    {
+	    	stern = nichtstern;
+	    	for(int n = i; n>0; n--)
+	    	{
+	    		System.out.print(stern);
+	    	}
+	    	System.out.println();
+	    }
+		
+		// Abstand zwischen den Ausgaben
+		System.out.println();
+		System.out.println();
+		
+		
+		// c)
+		// for ...
+		for(int i = 10; i>0; i--) 
+	    {
+	    	stern = nichtstern;
+	    	int grenze = i-10;
+	    	for(int leer = 0; leer>grenze;leer--)
+	    	{
+	    		System.out.print(" ");
+	    	}
+	    	for(int n = i; n>0; n--)
+	    	{
+	    		System.out.print(stern);
+	    	}
+	    	System.out.println();
+	    }
+		
+		// Abstand zwischen den Ausgaben
+		System.out.println();
+		System.out.println();
+		
+		// d)
+		// for ...
+		for(int i = 0; i<10; i++) 
+	    {
+	    	stern = nichtstern;
+	    	
+	    	for(int leer = i; leer<9;leer++)
+	    	{
+	    		System.out.print(" ");
+	    	}
+	    	int grenze = i+1;
+	    	for(int leer = 0; leer<grenze;leer++)
+	    	{
+	    		System.out.print(stern);
+	    	}
+	    	
+	    	
+	    	System.out.println();
+	    }
+    }
+}
