@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class prog {
+    
+    public static void main(String[]args)
+	{
+		
+		int speicher1 = 0;
+		int speicher2 = 0;
+		int sp3 = 0;
+		Scanner sc = new Scanner(System.in);
+		int anzahl = sc.nextInt();
+		
+		for(int i=0; i<anzahl; i++)
+		{	
+			int zahl = sc.nextInt();
+
+			speicher2 = speicher1;
+			speicher1 = zahl;
+			
+			if(i>0)
+			{
+				sp3 = Math.min(speicher1, speicher2);
+				speicher1 = sp3;
+			}
+		}
+		System.out.println("Minimum: " + speicher1);
+		
+	}
+    
+
+}
