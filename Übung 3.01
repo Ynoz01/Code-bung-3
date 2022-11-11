@@ -1,3 +1,35 @@
+/*
+Aufgabe 3.1
+
+Gegeben ist folgendes Pseudo Pascal-Codefragment:
+
+GOTO 3;
+1: IF x = 0 THEN GOTO 9
+ELSE GOTO 5
+5: IF x > 2005 THEN GOTO 6
+ELSE GOTO 4;
+9: WRITELN( x ); // Ausgabe von x auf der Console
+GOTO 7;
+3: READLN( x );  // Einlesen eines Wertes von der
+                 // Console und speichern des
+                 // Wertes in der Variablen x
+GOTO 1;
+6: x := SQRT( x );  // SQRT(x) bedeutet Wurzel von x
+8: x := x * x;
+GOTO 9;
+4: x := x * (x + x);
+GOTO 8;
+7: ...
+Schreiben Sie das obige Pascal-Codefragment in optimierten Java-Code um, wobei zu berücksichtigen ist, dass Java kein GOTO-Statement wie in Pascal kennt.
+
+Hinweis: 
+Die erste Spalte zeigt so genannte Sprungmarken: z.B. Zeile 1 bedeutet: springe zur Zeile mit Marke 3 (READLN(x)).
+Für SQRT() verwenden Sie wieder Math.sqrt().
+*/
+
+
+//CODE BEGINN
+
 import java.util.Scanner;
 
 class prog {
