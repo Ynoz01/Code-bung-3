@@ -1,0 +1,86 @@
+// Ausgabe 1 --------------------------------------------------
+/*
+Für x = 5 und y = 8 soll die folgende Ausgabe erzeugt werden:
+@@@@@
+$$$$$
+&&&&&
+*/
+public static void ausgabe1 (){
+    
+int x = 5, y = 8;
+
+if ( y == 8 )
+if ( x == 5 )
+System.out.println( "@@@@@");
+else
+System.out.println( "#####");
+System.out.println( "$$$$$");
+System.out.println( "&&&&&");
+
+}
+
+// Ausgabe 2 --------------------------------------------------
+/*
+Für x = 5 und y = 8 soll die folgende Ausgabe erzeugt werden:
+@@@@@
+*/
+public static void ausgabe2 (){
+    
+int x = 5, y = 8;
+
+if ( y == 8 )
+if ( x == 5 )
+System.out.println( "@@@@@");
+else{
+System.out.println( "#####");
+System.out.println( "$$$$$");
+System.out.println( "&&&&&");
+}
+}
+
+// Ausgabe 3 --------------------------------------------------
+/*
+Für x = 5 und y = 8 soll die folgende Ausgabe erzeugt werden:
+@@@@@
+&&&&&
+*/
+public static void ausgabe3 (){
+    
+int x = 5, y = 8;
+
+if ( y == 8 )
+
+    if ( x == 5 )
+    System.out.println( "@@@@@");
+
+    else{
+    System.out.println( "#####");
+    System.out.println( "$$$$$");
+}
+System.out.println( "&&&&&");
+
+}
+
+// Ausgabe 4 --------------------------------------------------
+/*
+Für x = 5 und y = 7 soll die folgende Ausgabe erzeugt werden: (Hinweis: die letzten drei
+Anweisungen nach der else-Anweisung sind als ein Block anzusehen!)
+#####
+$$$$$
+&&&&&
+*/
+public static void ausgabe4 (){
+    
+int x = 5, y = 7;
+
+if ( y == 8 )
+if ( x == 5 )
+System.out.println( "@@@@@");
+else{
+}
+System.out.println( "#####");
+System.out.println( "$$$$$");
+System.out.println( "&&&&&");
+
+}
+
