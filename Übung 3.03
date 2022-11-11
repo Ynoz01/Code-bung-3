@@ -7,6 +7,13 @@ Dabei dienen die Einrückungen im Quellcode nur der Übersichtlichkeit und werde
 
 Hinweis:
 Beachten Sie die Kommentare innerhalb der Templates bei den Methoden ausgabe1 bis ausgabe4 !
+
+Zum Beispiel:
+
+Test	        Resultat
+ausgabe1();     @@@@@
+                $$$$$
+                &&&&&
 */
 
 
