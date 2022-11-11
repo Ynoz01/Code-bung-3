@@ -1,3 +1,44 @@
+/*
+Aufgabe 3.13.1
+
+Die Zahl Pi definiert sich durch folgende (unendliche) Reihe:
+π = 4  -  4/3  +  4/5  -  4/7  +  4/9  -  4/11 + ...
+
+Schreiben Sie ein Programm, das die Zahl π approximiert, in dem erst ein Term, dann zwei, dann drei usw. berechnet werden.
+Lesen Sie die Anzahl der Nachkomma Stellen ein und geben die dafür notwendige Anzahl an Termen aus, um diese Pi Zahl zu approximieren.
+Falls die geforderte Genauigkeit größer acht ist, geben Sie eine entsprechende Meldung aus und berechnen Pi nicht. 
+
+Entwickeln Sie das Programm unter Verwendung einer do-while Schleife. 
+
+Hinweis: 
+Gleichheitsvergleiche auf reellen Zahlen sind grundsätzlich zu vermeiden aufgrund der Ungenauigkeit. 
+Stattdessen: 
+Um herauszufinden, wann z.B. zum ersten Mal 3.14 berechnet wird, 
+multiplizieren Sie Ihren berechneten Wert für pi mit 100, 
+casten ihn nach int und vergleichen ihn dann mit der Ganzzahl 314. 
+
+D.h. je nach gewünschter Nachkommastellengenauigkeit multiplizieren Sie den gerade berechneten pi Wert 
+mit der entsprechenden 10 er Potenz. 
+
+Zum Beispiel:
+
+Eingabe	Resultat
+3	Anzahl Nachkomma Genauigkeit: (1 bis 8): 3
+	3.141 dem nach 1688.ten Term
+	
+7	Anzahl Nachkomma Genauigkeit: (1 bis 8): 7
+	3.1415926 dem nach 18660304.ten Term
+	
+0	Anzahl Nachkomma Genauigkeit: (1 bis 8): 0
+	3.0 dem nach 3.ten Term
+	
+10	Anzahl Nachkomma Genauigkeit: (1 bis 8): 10
+	Pi kann nicht approximiert werden auf 10 Stellen
+*/
+
+
+//CODE BEGINN
+
 import java.util.Scanner;
 
 
