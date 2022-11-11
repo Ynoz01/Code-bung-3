@@ -25,6 +25,13 @@ Schreiben Sie das obige Pascal-Codefragment in optimierten Java-Code um, wobei z
 Hinweis: 
 Die erste Spalte zeigt so genannte Sprungmarken: z.B. Zeile 1 bedeutet: springe zur Zeile mit Marke 3 (READLN(x)).
 Für SQRT() verwenden Sie wieder Math.sqrt().
+
+Zum Beispiel:
+
+Eingabe	Resultat
+3.567	x: 647.5486893324841
+4578	x: 4578.0
+4	x: 1024.0
 */
 
 
