@@ -1,0 +1,75 @@
+// Hier ist der letzte Fall ein Laufzeitfehler hab ich einfach mal so gelassen falls jemand ne andere lösung hat kann man die ja drunter kommentiert posten
+
+
+import java.util.Scanner;
+
+class prog {
+    
+    public static void main(String[] args) 
+	{
+		
+		char fort = 'j';
+
+		do {
+			
+			Scanner sc = new Scanner(System.in);
+		
+			String satz = sc.nextLine();
+			System.out.println(satz);
+		
+			int lang = satz.length();
+		
+			int a = 0;
+			int e = 0;
+			int is = 0;
+			int o = 0;
+			int u = 0;
+			int konson = 0;
+		
+		
+			for(int i=0; i<lang; i++) 
+			{
+				
+				char c = Character.toUpperCase(satz.charAt(i));
+				
+				switch(c) 
+				{
+					case 'A':
+						a++;
+						continue;
+					case 'E':
+						e++;
+						continue;
+					case 'I':
+						is++;
+						continue;
+					case 'O':
+						o++;
+						continue;
+					case 'U':
+						u++;
+						continue;
+					default :
+						konson++;
+						
+				}
+			}
+			System.out.println("a:" + a);
+			System.out.println("e:" + e);
+			System.out.println("i:" + is);
+			System.out.println("o:" + o);
+			System.out.println("u:" + u);
+			System.out.println("Kons. u. Sonderzeichen:" + konson);
+			System.out.println("Beenden (j oder n)");
+			fort = sc.next().charAt(0);
+			
+			if(fort!='n' && fort!='j') 
+			{
+			    fort = 'n';
+			}
+			System.out.println(fort);
+		}
+		while(fort == 'n');
+	}
+			
+}
