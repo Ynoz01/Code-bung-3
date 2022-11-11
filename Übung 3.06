@@ -1,3 +1,23 @@
+/*
+Aufgabe 3.6
+
+Die Fibonacci Reihe 0, 1, 1, 2, 3, 5, 8, 13, 21, ... startet mit f0 = 0 und f1 = 1 und eine Fibonacci Zahl fi := fi-1 + fi-2, wobei i = 2, 3, ,...n.
+Schreiben Sie eine Methode, die eine beliebige Fibonacci Zahl n berechnet und diese Zahl als Rückgabewert zurückliefert.
+Verwenden Sie ausschließlich die Ihnen bis jetzt bekannten Java Konstrukte.
+
+Hinweis:
+Das erste Element in der Reihe wird mit f0 (also Index 0) definiert.
+Zum Beispiel:
+
+Test								Resultat
+System.out.println("fibonacciZahl 0 = " +fibonacci(0));		fibonacciZahl 0 = 0
+System.out.println("fibonacciZahl 50 = " +fibonacci(50));	fibonacciZahl 50 = 12586269025
+System.out.println("fibonacciZahl 95 = " +fibonacci(95));	fibonacciZahl 95 = -4953053512429003327
+*/
+
+
+//CODE BEGINN
+
 package übung;
 
 import java.util.Scanner;
