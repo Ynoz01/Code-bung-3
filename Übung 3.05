@@ -1,3 +1,44 @@
+/*
+Aufgabe 3.5
+
+Implementieren Sie drei verschiedene Methoden, die jeweils die Summe aller positiven und durch 3 teilbaren natürlichen Zahlen bis zu einer Zahl n berechnen und identische Ausgaben erzeugen.
+
+Dabei gelten folgende Regeln:
+• Die Zahl n wird  von jeder Methode als Parameter entgegengenommen.
+• Wenn n kleiner als 3 ist wird als Summe 0 ausgegeben.
+• Wenn n nicht durch 3 teilbar ist, wird die Summe nur bis zur nächst kleineren durch 3 teilbaren Zahl berechnet.
+
+Beispiel: Wenn n = 14 wird als Ergebnis die Summe 3+6+…+12 berechnet.
+
+Lassen Sie sich nicht nur die Summe ausgeben, sondern auch die Zahlen, die wirklich für die Addition verwendet werden.
+
+a. Implementieren Sie die erste Methode durch Verwendung einer for-Schleife.
+
+b. Implementieren Sie die zweite Methode durch Verwendung einer while-Schleife.
+
+c. Implementieren Sie die dritte Methode durch Verwendung einer do-while-Schleife.
+
+
+Zum Beispiel:
+
+Test							Resultat
+System.out.println(" = " + dreierSummeFor(12));		3 + 6 + 9 + 12 = 30
+System.out.println(" = " + dreierSummeWhile(12));	3 + 6 + 9 + 12 = 30
+System.out.println(" = " + dreierSummeDowhile(12));	3 + 6 + 9 + 12 = 30
+
+System.out.println(" = " + dreierSummeFor(2));		 = 0
+System.out.println(" = " + dreierSummeWhile(2));	 = 0
+System.out.println(" = " + dreierSummeDowhile(2));	 = 0
+
+System.out.println(" = " + dreierSummeFor(16));		3 + 6 + 9 + 12 + 15 = 45
+System.out.println(" = " + dreierSummeWhile(16));	3 + 6 + 9 + 12 + 15 = 45
+System.out.println(" = " + dreierSummeDowhile(16));	3 + 6 + 9 + 12 + 15 = 45
+
+*/
+
+
+//CODE BEGINN
+
 package übung;
 
 import java.util.Scanner;
