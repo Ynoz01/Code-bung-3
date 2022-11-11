@@ -1,3 +1,28 @@
+/*
+Aufgabe 3.4
+
+Mäxchen ist ein einfaches Würfelspiel, dessen Spielregeln hier ohne Bedeutung sind.
+Ein Spieler wirft zwei Würfel, wobei sich der Wert des Wurfs aus der Augenzahl des Würfels wie folgt ergibt:
+
+• Der Wurf 1, 2 heißt Mäxchen und ist 1000 Punkte wert.
+• Ein Wurf mit zwei gleichen Augenzahlen wird als Pasch bezeichnet und ist 100 ∙ Augenzahl an Punkten wert.
+   Der Wurf 4, 4 hat beispielsweise den Wert 400.
+• Ansonsten ist der Wert 10∙ (höhere Augenzahl)+(niedrige Augenzahl).
+  Der Wurf 3, 5 hat beispielsweise den Wert 53.
+
+Schreiben Sie eine Methode maexchen, die die Augenzahl von zwei Würfeln als Parameterwerte entgegennimmt und den Wert des Wurfes als Returnwert zurückgibt.
+Gehen Sie davon aus, dass immer eine korrekte Zahl von 1 bis 6 eingegeben wird.
+
+
+Zum Beispiel:
+
+Test	                            Resultat
+System.out.println(maexchen(2,1));      1000
+System.out.println(maexchen(4,3));        43
+System.out.println(maexchen(3,3));       300
+*/
+
+//CODE BEGINN
 public static int maexchen(int a, int b) 
 {
     if(a<=6 && a>=1 && b<=6 && b>=1)
