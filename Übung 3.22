@@ -1,0 +1,118 @@
+import java.util.Scanner;
+
+
+class prog {
+    
+    public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Anzahl Nachkomma Genauigkeit: (1 bis 8): ");
+		int stellen = sc.nextInt();
+		System.out.println(stellen);
+		double pi = 4;
+		int counter = 0;
+		boolean case0= false;
+		int output = 0;
+		double print = 0;
+		boolean value = true;
+		
+		for(int i = 3; value; i+=2)
+		{
+			
+			if(counter%2==0) {
+				pi -= (double)4/i;
+			
+			}
+			else
+				pi += (double)4/i;
+			
+			switch(stellen) 
+			{
+			case 0:
+			    case0 = (int)(pi * 1)==3;
+				break;
+			case 1:
+				case0 = (int)(pi * 10)==31;
+				output = (int)(pi * 10);
+				break;
+			case 2:
+				case0 = (int)(pi * 100)==314;
+				output = (int)(pi * 100);
+				break;
+			case 3:
+				case0 = (int)(pi * 1000)==3141;
+				output = (int)(pi * 1000);
+				break;
+			case 4:
+				case0 = (int)(pi * 10000)==31415;
+				output = (int)(pi * 10000);
+				break;
+			case 5:
+				case0 = (int)(pi * 100000)==314159;
+				output = (int)(pi * 100000);
+				break;
+			case 6:
+				case0 = (int)(pi * 1000000)==3141592;
+				output = (int)(pi * 1000000);
+				break;
+			case 7:
+				case0 = (int)(pi * 10000000)==31415926;
+				output = (int)(pi * 10000000);
+				break;
+			case 8:
+				case0 = (int)(pi * 100000000)==314159265;
+				output = (int)(pi * 100000000);
+				break;
+			default:
+				case0 = true;
+				
+			}
+			counter++;
+			value = !case0;
+			
+		}
+		
+		switch(stellen) 
+		{
+		case 0:
+			print = (double)output;
+			System.out.print((int)pi + ".0 dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 1:
+			print = (double)output/10;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 2:
+			print = (double)output/100;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 3:
+			print = (double)output/1000;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 4:
+			print = (double)output/10000;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 5:
+			print = (double)output/100000;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 6:
+			print = (double)output/1000000;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 7:
+			print = (double)output/10000000;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		case 8:
+			print = (double)output/100000000;
+			System.out.print(print + " dem nach " +( counter + 1 )+ ".ten Term");
+			break;
+		default:
+			System.out.println("Pi kann nicht approximiert werden auf " + stellen + " Stellen");
+
+		}
+	}
+}
