@@ -1,3 +1,86 @@
+/*
+Aufgabe 3.9
+
+Schreiben Sie ein Programm, das die Vokale und sonstigen Zeichen in einem Satz zählt:
+
+-Dazu lesen Sie einen Satz über die Console ein.
+-Das Programm gibt dann die Anzahl der a’s, e’s, i’s usw. sowie die Anzahl der Konsonanten und Sonderzeichen aus.
+-Ein Leerzeichen wird dabei als Sonderzeichen gezählt.
+-Dabei wird nicht zwischen Groß- und Kleinschreibweise der Vokale unterschieden.
+		!!!!! Verwenden Sie zur Lösung eine switch Anweisung ohne break !!!!!
+Außerdem wird das Programm solange weiter fortgesetzt, bis der Bediener bei Beenden j eintippt.
+Hinweis:
+• Anzahl der Zeichen in einem Satz erhält man mit satz.length()
+• Auf einen einzelnen Buchstaben eines Strings greifen Sie mit charAt() zu:
+ 
+  String satz;
+  char c;
+
+Erster Buchstabe im Satz:  c = satz.charAt(0);
+Zweiter Buchstabe im Satz: c = satz.charAt(1);
+Letzter Buchstabe im Satz: c = satz.charAt(satz.length()-1);
+
+Zum Beispiel:
+
+Eingabe	Resultat
+Du hast zwei Augen im Gesicht.
+j
+				Du hast zwei Augen im Gesicht.
+				a:2
+				e:3
+				i:3
+				o:0
+				u:2
+				Kons. u. Sonderzeichen:20
+				Beenden (j oder n)
+				j
+Ist Java cool?
+j
+				Ist Java cool?
+				a:2
+				e:0
+				i:1
+				o:2
+				u:0
+				Kons. u. Sonderzeichen:9
+				Beenden (j oder n)
+				j
+Du hast zwei Augen im Gesicht.		
+n
+Morgen ist Wochenende!!!
+n
+Hallo Java
+j
+				Du hast zwei Augen im Gesicht.
+				a:2
+				e:3
+				i:3
+				o:0
+				u:2
+				Kons. u. Sonderzeichen:20
+				Beenden (j oder n)
+				n
+				Morgen ist Wochenende!!!
+				a:0
+				e:4
+				i:1
+				o:2
+				u:0
+				Kons. u. Sonderzeichen:17
+				Beenden (j oder n)
+				n
+				Hallo Java
+				a:3
+				e:0
+				i:0
+				o:1
+				u:0
+				Kons. u. Sonderzeichen:6
+				Beenden (j oder n)
+				j
+*/
+
+
 // Hier ist der letzte Fall ein Laufzeitfehler hab ich einfach mal so gelassen falls jemand ne andere lösung hat kann man die ja drunter kommentiert posten
 
 
