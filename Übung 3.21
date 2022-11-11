@@ -1,3 +1,65 @@
+/*
+Aufgabe 3.12
+
+Schreiben Sie ein Programm, dass die folgenden Sternmuster untereinander ausgibt:
+
+a)
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********	
+
+b)
+**********
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+c)
+**********
+ *********
+  ********
+   *******
+    ******
+     *****
+      ****
+       ***
+        **
+         *
+	 
+d)
+         *
+        **
+       ***
+      ****
+     *****
+    ******
+   *******
+  ********
+ *********
+**********
+
+Hinweis:
+Benutzen Sie for-Schleifen. 
+Alle Sterne (*) sollen jeweils durch eine einzelne Anweisung der Form System.out.print( '*' ); erzeugt werden. 
+System.out.println(); verwenden Sie für den Zeilenumbruch. 
+System.out.print(' '); soll benutzt werden, um die Leerzeichen in den letzten beiden Mustern zu erhalten.
+*/
+
+//CODE BEGINN
+
 class prog {
     
     public static void main(String[] args) 
