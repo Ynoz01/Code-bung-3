@@ -1,0 +1,25 @@
+public static String ermittlePythagoraeischesDreick(int side) 
+	{
+		String seiten = "";
+	    for(int a = 1; a<=side; a++)
+	    {
+	    	for(int b = 1; b<=side; b++)
+	    	{
+	    		for(int c = 1; c<=side; c++)
+	    		{
+	    			if(c*c == a*a + b*b) 
+	    			{
+	    				if(c==0);
+	    				
+	    				else
+	    				{
+	    					seiten += "s1: " + a + " s2: " + b + "  h: " + c + "\n";
+	    					
+	    				}
+	    			}
+	    				
+	    		}
+	    	}
+	    }
+		return seiten;
+	}
