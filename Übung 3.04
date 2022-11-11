@@ -1,0 +1,15 @@
+public static int maexchen(int a, int b) 
+{
+    if(a<=6 && a>=1 && b<=6 && b>=1)
+        if(a==2 && b==1 || a==1 && b==2)
+            return 1000;
+        else
+            if(a==b)
+                return a*100;
+            else
+                if(a>b)
+                    return (a*10)+b;
+                else
+                    return (b*10)+a;
+    else
+        return 0;
