@@ -1,3 +1,29 @@
+/*
+Aufgabe 3.11
+
+Schreiben Sie ein Programm, dass das Minimum einer Menge von ganzen Zahlen berechnet und diese durch den Bediener einliest.
+Lesen Sie als erstes ein, wie viel Zahlen eingelesen werden sollen.
+Berechnen Sie für jede eingelesene Zahl das aktuelle Minimum der Menge neu.
+Geben Sie am Ende das Minimum auf der Konsole aus.
+
+Zum Beispiel:
+
+Eingabe	Resultat
+5	
+1
+7
+3
+2
+9	Minimum: 1
+
+3
+12
+7
+8	Minimum: 7
+
+*/
+
+
 import java.util.Scanner;
 
 class prog {
