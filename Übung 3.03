@@ -1,3 +1,17 @@
+/*
+Aufgabe 3.3
+
+Ändern Sie den gegebenen Programmcode in den vorgegebenen Methoden ausgabe1 bis ausgabe4 dahingehend ab, dass jeweils die Ausgabe erzeugt wird, die in den einzelnen Unteraufgaben vorgegeben ist.
+Erlaubte Änderungen am Code: Einrückungen und Klammern.
+Dabei dienen die Einrückungen im Quellcode nur der Übersichtlichkeit und werden vom Compiler ignoriert.
+
+Hinweis:
+Beachten Sie die Kommentare innerhalb der Templates bei den Methoden ausgabe1 bis ausgabe4 !
+*/
+
+
+
+//CODE BEGINN
 // Ausgabe 1 --------------------------------------------------
 /*
 Für x = 5 und y = 8 soll die folgende Ausgabe erzeugt werden:
