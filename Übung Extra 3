@@ -1,3 +1,92 @@
+/*
+Aufgabe 3.15
+
+Entwerfen und schreiben Sie ein Programm, das die Rechenfähigkeiten von 2-stelligen Operatoren (+ ,- ,* ,/) eines Grundschülers testet, indem es die vier Grundrechenarten (Ganzzahlen) überprüft. Dazu lesen Sie von der Konsole die Operation, die zwei Operanden ein und geben jeweils eine Rückmeldung, ob das auf der Konsole eingegebene Resultat korrekt ist oder nicht (die korrekten Rückmeldungen entnehmen Sie den Testfällen). 
+
+Falls ein Grundschüler eine falsche Antwort gegeben hat, hat er/sie noch 2 weitere Versuche, um das korrekte Ergebnis einzugeben. Falls beim dritten Versuch immer noch das falsche Ergebnis eingegeben wird, brechen Sie diese Aufgabe ab und es wird als nächstes abgefragt, ob eine neue Aufgabe zu bearbeiten (Eingabe: 'j') ist oder das Programm beendet wird. 
+
+Hinweise:    
+Mit Hilfe des Scannerobjekts lesen Sie folgende Werte ein:
+         - die Operation als char-Wert
+         - die beiden Operanden
+         - das Ergebnis
+         - ggf. weitere Ergebnisse im Falle der Eingabe eines falschen Resultats        
+           - und ob eine neue Aufgabe bearbeitet werden soll 
+Die verschiedenen Operationen sollen innerhalb einer switch-Anweisung  (+ , - , * , : ) implementiert werden.
+Selektieren Sie einen der vier Fälle in Abhängigkeit des eingelesenen char-Werts.
+Die System out Feedback-Texte kopieren Sie sich aus den Testfällen.
+
+Zum Beispiel:
+
+Eingabe				Resultat
+/				
+-100
+3
+-33
+n
+				Operation (+,-,*,/) eingeben:
+				-100 / 3 =
+				> -33
+				Super! Beim + 1. Mal richtig
+				Neue Aufgabe? (j = ja)
++
+10
+12
+20
+34
+32
+n
+				Operation (+,-,*,/) eingeben:
+				10 + 12 =
+				> 20
+				Denke nochmals nach und wiederhole die Aufgabe (noch 2 Versuche!)
+				10 + 12 =
+				> 34
+				Denke nochmals nach und wiederhole die Aufgabe (noch 1 Versuche!)
+				10 + 12 =
+				> 32
+				Du musst es dir nochmal erklaeren lassen
+				Neue Aufgabe? (j = ja)
+/
+10
+1
+10
+j
+
+-
+100
+88
+13
+12
+j
+
+/
+10
+2
+5
+n
+				Operation (+,-,*,/) eingeben:
+				10 / 1 =
+				> 10
+				Super! Beim + 1. Mal richtig
+				Neue Aufgabe? (j = ja)
+				Operation (+,-,*,/) eingeben:
+				100 - 88 =
+				> 13
+				Denke nochmals nach und wiederhole die Aufgabe (noch 2 Versuche!)
+				100 - 88 =
+				> 12
+				Super! Beim + 2. Mal richtig
+				Neue Aufgabe? (j = ja)
+				Operation (+,-,*,/) eingeben:
+				10 / 2 =
+				> 5
+				Super! Beim + 1. Mal richtig
+				Neue Aufgabe? (j = ja)
+				*/
+
+
+
 import java.util.Scanner;
 
 class prog {
