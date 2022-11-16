@@ -1,0 +1,140 @@
+import java.util.Scanner;
+
+class prog {
+    
+     public static void main(String[] args) 
+	    {
+	        
+	        Scanner sc = new Scanner(System.in);
+	        
+	        char neu = 'j';
+	        char opp = 'n';
+	        int a = 1;
+	        int b = 1;
+	        int z = 0;
+	        
+	        do
+	        {
+	        	System.out.println("Operation (+,-,*,/) eingeben:");
+	        	opp = sc.next().charAt(0);
+	        	a = sc.nextInt();
+	        	b = sc.nextInt();
+	        	int s = 2;
+	        	
+	        	switch(opp) 
+	        	{
+	        		case '+':
+	        			for(int i = 1; i <= 3 || s>=0; i++) 
+	        			{
+	        				z = sc.nextInt();
+		        			System.out.println(a + " + " + b + " = ");
+		        			System.out.println("> " + z);
+		        			if (z==a + b)
+		        			{
+		        				System.out.println("Super! Beim + " + i + ". Mal richtig");
+		        				i = 4;
+		        				s = -1;
+		        			}
+		        			else
+		        			{
+		        				if(s==0)
+		        				{
+		        					System.out.println("Du musst es dir nochmal erklaeren lassen");
+		        					s--;
+		        				}
+		        				else
+		        				{
+		        					System.out.println("Denke nochmals nach und wiederhole die Aufgabe (noch " +  s + " Versuche!)");
+		        					s--;
+		        				}
+		        			}
+	        			}
+	        		break;
+	        		case '-':
+	        			for(int i = 1; i <= 3 || s>=0; i++) 
+	        			{
+	        				z = sc.nextInt();
+		        			System.out.println(a + " - " + b + " = ");
+		        			System.out.println("> " + z);
+		        			if (z==a - b)
+		        			{
+		        				System.out.println("Super! Beim + " + i + ". Mal richtig");
+		        				i = 4;
+		        				s = -1;
+		        			}
+		        			else
+		        			{
+		        				if(s==0)
+		        				{
+		        					System.out.println("Du musst es dir nochmal erklaeren lassen");
+		        					s--;
+		        				}
+		        				else
+		        				{
+		        					System.out.println("Denke nochmals nach und wiederhole die Aufgabe (noch " +  s + " Versuche!)");
+		        					s--;
+		        				}
+		        			}
+	        			}
+	        		break;
+	        		case '*':
+	        			for(int i = 1; i <= 3 || s>=0; i++) 
+	        			{
+	        				z = sc.nextInt();
+		        			System.out.println(a + " * " + b + " = ");
+		        			System.out.println("> " + z);
+		        			if (z==a * b)
+		        			{
+		        				System.out.println("Super! Beim + " + i + ". Mal richtig");
+		        				i = 4;
+		        				s = -1;
+		        			}
+		        			else
+		        			{
+		        				if(s==0)
+		        				{
+		        					System.out.println("Du musst es dir nochmal erklaeren lassen");
+		        					s--;
+		        				}
+		        				else
+		        				{
+		        					System.out.println("Denke nochmals nach und wiederhole die Aufgabe (noch " +  s + " Versuche!)");
+		        					s--;
+		        				}
+		        			}
+	        			}
+	        		break;
+	        		case '/':
+	        			for(int i = 1; i <= 3 || s>=0; i++) 
+	        			{
+	        				z = sc.nextInt();
+		        			System.out.println(a + " / " + b + " = ");
+		        			System.out.println("> " + z);
+		        			if (z==a / b)
+		        			{
+		        				System.out.println("Super! Beim + " + i + ". Mal richtig");
+		        				i = 4;
+		        				s = -1;
+		        			}
+		        			else
+		        			{
+		        				if(s==0)
+		        				{
+		        					System.out.println("Du musst es dir nochmal erklaeren lassen");
+		        					s--;
+		        				}
+		        				else
+		        				{
+		        					System.out.println("Denke nochmals nach und wiederhole die Aufgabe (noch " +  s + " Versuche!)");
+		        					s--;
+		        				}
+		        			}
+	        			}
+	        		break;
+	        	}
+	        	
+	        	System.out.println("Neue Aufgabe? (j = ja)");
+	        	neu = sc.next().charAt(0);
+	        }while(neu=='j');
+	    }
+}
