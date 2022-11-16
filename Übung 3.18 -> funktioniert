@@ -1,0 +1,42 @@
+package ProgUebTest;
+
+import java.util.Scanner;
+
+public class Aufgabe3_18neu {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		char end = 'j';
+    
+		do {
+			
+		String satz = sc.nextLine();
+		int length = satz.length();
+		int a=0; int e=0; int i=0; int o=0; int u=0; int sonder =0;
+		
+		for(int n=0;n<length;n++) {
+			
+			char c = satz.charAt(n);
+			
+			int z = switch(c) {
+				
+				case 'a','A' -> a++;
+				case 'e','E' -> e++; 
+				case 'i','I' -> i++; 
+				case 'o','O' -> o++; 
+				case 'u','U' -> u++; 
+				default -> sonder++;
+			};                                                                            //Semikolon nicht vergessen!
+		}
+		System.out.println(satz +"\na:"+a+"\ne:"+e+"\ni:"+i+"\no:"+o+"\nu:"+u);
+		System.out.println("Kons. u. Sonderzeichen:"+sonder+"\nBeenden (j oder n)");
+
+		end =sc.nextLine().charAt(0);
+		System.out.println(end);
+		
+		}while(end == 'n');
+
+		}
+
+	}
