@@ -8,7 +8,7 @@ Schreiben Sie ein Programm, das die Zahl π approximiert, in dem erst ein Term, 
 Lesen Sie die Anzahl der Nachkomma Stellen ein und geben die dafür notwendige Anzahl an Termen aus, um diese Pi Zahl zu approximieren.
 Falls die geforderte Genauigkeit größer acht ist, geben Sie eine entsprechende Meldung aus und berechnen Pi nicht. 
 
-Entwickeln Sie das Programm unter Verwendung einer do-while Schleife. 
+Entwickeln Sie das Programm unter Verwendung einer for Schleife. 
 
 Hinweis: 
 Gleichheitsvergleiche auf reellen Zahlen sind grundsätzlich zu vermeiden aufgrund der Ungenauigkeit. 
